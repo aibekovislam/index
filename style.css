@@ -3,17 +3,120 @@
 }
 
 body{
-    background-color: #262626;
-    color: white;
     font-family: 'Montserrat', sans-serif;
 }
+#navbar {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  #navbar li { display: inline; 
+      transition-duration: 0.1s;
+  }
 
-.zago{
+
+.divs{
+	width: 1000px;
+	height: 2000px;
+}
+
+.header.red{
+    background-color: red;
+}
+  
+  #navbar {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 1550px;
+    text-align: center;
+  }
+  #navbar a {
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    width: 190px;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  
+  #navbar li:hover{
+      letter-spacing: 3px;
+  }
+  
+  a:hover{
+      color: black;
+      text-shadow: 0 0 70px #adadad;
+  }
+  
+  a{
+      transition-duration: 0.5s;
+  }
+
+  .header{ 
+      background-color: black;
+      height: 50px;
+  }
+
+
+.tabs{
+    border: 1px solid black;
+    margin-top: 70px;
+    margin-right: 30px;
     margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    left: 500px;
+    top: 100px;
 }
 
-.line{
-    height: 1000px;
+.text-tab{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-weight: bolder;
 }
+
+.tabss.active{
+    border: none;
+    background-color: cyan;
+    width: 163px;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+}
+
+.tabss{
+    border: none;
+    background-color: lightgray;
+    width: 163px;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+}
+
+.tabss{
+    border: none;
+    background-color: lightgray;
+    width: 163px;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+}
+
+.tabss:hover{
+    background-color: rgb(121, 255, 255);
+}
+
+
+.text-tab{
+    display: none;
+}
+
+
+.text-tab.active{
+    display: block;
+}
+

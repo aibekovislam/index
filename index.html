@@ -12,13 +12,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="zago">Уроки по <span class="yellow">JavaScript</span></h1>
-    <hr class="line">
-
-
-
-    <script src="index.js">
-
-    </script>
+<div class="header">
+    <ul id="navbar">
+      <li><a href="#" class="nav-links">Главная</a></li>
+      <li><a href="#" class="nav-links">Табы</a></li>
+      <li><a href="js2.html" class="nav-links">Третья</a></li>
+      <li><a href="#" class="nav-links">Четрвертая</a></li>
+    </ul>
+</div>
+    <div class="tabs">
+      <button class="tabss  active" data-tab="#tab1">Tab 1</button>
+      <button class="tabss" data-tab="#tab2">tab 2</button>
+      <button class="tabss" data-tab="#tab3">Tab 3</button>
+      <div class="tab1">
+        <div class="text-tab  active" id="tab1">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui odit veniam odio, aperiam excepturi repudiandae tenetur at. Similique necessitatibus qui, placeat esse asperiores soluta fugit totam nam unde laborum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vel nulla dolores voluptas nostrum architecto facilis nam placeat beatae, officiis error temporibus omnis tempora libero rerum ea. Unde, esse repellendus.
+          </p>
+        </div>
+        <div class="text-tab" id="tab2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nam cupiditate corrupti iusto, odio libero temporibus deleniti asperiores dolore, sed voluptatum odit saepe adipisci porro ex. Cumque distinctio ipsum sapiente.
+          Вторая</p>
+        </div>
+        <div class="text-tab" id="tab3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta vel sit velit ab dicta incidunt quibusdam voluptate, culpa ad sunt nesciunt eos impedit assumenda explicabo aliquam! Eveniet voluptatum sit provident.
+          Третья.</p>
+        </div>
+      </div>
+<div class="divs">
+</div>
+   <script src="index.js"></script>
 </body>
 </html>

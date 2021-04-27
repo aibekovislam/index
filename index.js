@@ -41,3 +41,60 @@
 // for (let num = 0; num < 6; num++) {
 //     console.log(num);
 // }
+
+// const header = document.querySelector(".header");
+
+// const links = document.querySelectorAll(".nav-links");
+
+// const testbtn = document.querySelector("#TestBtn");
+
+
+// window.addEventListener("scroll", checkScroll)
+// document.addEventListener("DOMContentLoaded", checkScroll)
+
+
+// function checkScroll() {
+//         let scrollPos = window.scrollY;
+//         if (scrollPos > 0) {
+//             header.classList.add('red');
+//         } else {
+//             header.classList.remove('red');
+//         } 
+// }
+
+
+// for (let navItem of links) {
+//     navItem.addEventListener("click", function() {
+//         console.log(navItem.text)
+//     })
+// }
+
+
+const tabs_btn = document.querySelectorAll(".tabss");
+const tabs_items = document.querySelectorAll(".text-tab")
+
+
+tabs_btn.forEach(TabsClick); 
+
+function TabsClick (item) {
+    tabs_btn.forEach(function(item) {
+        item.addEventListener("click", function() {
+            let currentBtn = item;
+            let Tabid = currentBtn.getAttribute("data-tab");
+            let currentTab = document.querySelector(Tabid);
+    
+            if (! currentBtn.classList.contains('active')) {
+                tabs_btn.forEach(function(item) {
+                    item.classList.remove("active")
+                });
+        
+                tabs_items.forEach(function(item) {
+                    item.classList.remove("active")
+                })
+        
+                currentBtn.classList.add("active");
+                currentTab.classList.add("active");
+            }
+        })
+    });
+}
